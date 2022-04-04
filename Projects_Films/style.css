@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #02021c;
+  color: white;
+  overflow-x: hidden;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+.trailer {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 75%;
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 30px;
+ }
+
+ .trailer iframe, .trailer object, .trailer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+ }
+
+ h1{
+  color: #fff;
+  background-image: url("/IMG/titulo-filme.jpg");
+  height: 15vh;
+  width: 50vw;
+  position: relative;
+  bottom: 120px;
+  padding-left: 80px;
+  font-size: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.informacoes {
+  height: 90vh;
+  background-image: url("https://i.postimg.cc/Jnmx2Pxf/Soul3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-temporadas {
+  margin-left: 50px;
+}
+
+.flex {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 110px;
+}
+
+.info img {
+  width: 2%;
+  margin-right: 5px;
+}
+
+.info p {
+  font-size: 15px;
+  background-color: #02021c65;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.botao-assistir {
+  width: 10vw;
+  height: 10vw;
+  background-image: url("./img/icon-play.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: 1670px;
+  margin-bottom: 300px;
+  position: absolute;
+}
+
+.botao-assistir:hover {
+  opacity: 0.4;
+}
+
+.botoes {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.sinopse {
+  padding: 30px;
+  margin-left: 50px;
+  margin-top: 50vh;
+  background-color: #02021c69;
+  color: white;
+  width: 35%;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.786);
+  backdrop-filter: blur(5.5px);  
+  -webkit-backdrop-filter: blur(5.5px);
+  
+}
+
+.sinopse:hover {
+  transform: scale(1.05);
+  filter: brightness(110%);
+  color: #f9f9fb;
+  /*background-color: rgba(255, 255, 255, 0.63);*/
+}
+
+
+
+
+
+.degrade {
+  width: auto;
+  height: 20vh;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgb(0, 0, 0)
+  );
+}
+
+.nome {
+  width: 50vw;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 60px;
+}
+
+.nome img {
+  width: 50vw;
+}
+
+.nome img:hover {
+ 
+}
+
+
+.play {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.play:hover {
+  opacity: 1;
+}
+
+.botoes2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.botoes2 div {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.botoes2 div img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.botoes2 div img:hover {
+ 
+  width: 100%;
+  height: 75%;
+ }
+
+ 
+
+@media screen and (max-width: 1237px) {
+  .informacoes {
+    background-image: url("https://i.postimg.cc/kgm5vqhM/Soul-cartaz-683x1024.jpg");
+    background-size: cover;
+    background-position: 0px;
+  }
+
+  .sinopse {
+    width: 80%;
+    background-color: #02021c9d;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .informacoes {
+    background-image: url("https://i.postimg.cc/kgm5vqhM/Soul-cartaz-683x1024.jpg");
+    background-size: 100%;
+    background-position: 0px 0px;
+  }
+
+  .botoes2 {
+    display: none;
+  }
+  h1{
+    font-size: 1.5em;
+    position: relative;
+    margin-bottom: 910px;
+    bottom: 153px;
+    right: 30px;
+  }
+  .nome {
+   
+    margin-top: 0;
+  }
+
+  .flex2 img{
+    margin-bottom: 120px;
+  }
+
+  .sinopse {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 430px;
+    background-color: #02021c79;
+    font-size: 15px;
+    line-height: 3em;
+    text-align: center;
+  }
+
+  .botao-assistir {
+    width: 100%;
+    background-image: url("https://i.postimg.cc/HLRqWHN1/icon-play.png");
+    position: absolute;
+  }
+
+  .info {
+    padding-top: 245px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .info img{
+    width: 8%;
+  }
+
+  .temporadas {
+    margin-left: 20px;
+  }
+}
